@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 nlp = spacy.load("en_core_web_sm")
 
 def group_text(text):
-    file = nlp(text)
+    doc = nlp(text)
     groups = [sent.text for sent in doc.sents]
     return groups
 
