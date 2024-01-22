@@ -10,7 +10,8 @@ pdf = st.sidebar.file_uploader("Upload or drag PDF here", type = "pdf", accept_m
 st.sidebar.button("Upload")
 
 if st.button("Process"):
-  if pdf:
-    result = process_uploaded_files(pdf)
+  user_query = st.text_input("Enter your query:")
+  if pdf and user_query:
+    result = process_uploaded_files(pdf, user_query)
     st.write('### Results:')
     st.write(result)
