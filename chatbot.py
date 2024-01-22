@@ -1,10 +1,19 @@
 import numpy as np
 import sklearn
-#import fitz
+import fitz
 #from spacy.lang.en import English
 import spacy
 from sklearn.metrics.pairwise import cosine_similarity
 nlp = spacy.load("en_core_web_sm")
+
+def extract_text_from_pdf(file):
+    doc = fitz.open(file)
+    text = ""
+    for page_num in range(doc.page_count):
+        page = doc[page_num]
+        text += page.get_text()
+    doc.close()
+    return text
 
 def group_text(text):
     doc = nlp(text)
