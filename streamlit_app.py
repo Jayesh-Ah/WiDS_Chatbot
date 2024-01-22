@@ -1,9 +1,9 @@
 import streamlit as st
-import fitz
+#import fitz
 import numpy as np
-from spacy.lang.en import English
+#from spacy.lang.en import English
 from sklearn.metrics.pairwise import cosine_similarity
-nlp = spacy.load("en_core_web_sm")
+#nlp = spacy.load("en_core_web_sm")
 
 def main():
 
@@ -17,14 +17,14 @@ def main():
   st.sidebar.button("Upload")
 
   #EXTRACTING TEXT
-  def extract(doc):
-    file = fitz.open(doc)
-    words = ""
-    for page_num in range(file.page_count):
-      page = doc[page_num]
-      words += page.get_text()
-    doc.close()
-    return words
+  #def extract(doc):
+  #  file = fitz.open(doc)
+  #  words = ""
+  #  for page_num in range(file.page_count):
+   #   page = doc[page_num]
+  #    words += page.get_text()
+  #  doc.close()
+  #  return words
   
 
 if __name__ == '__main__':
