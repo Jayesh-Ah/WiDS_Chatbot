@@ -23,7 +23,7 @@ def retrieve_groups(query_embedding, embeddings_database, groups_database, top_k
     similar_groups = [groups_database[i] for i in indexes]
     return similar_groups
 
-def process_uploaded_files(uploaded_files, user_query=None):
+def process_uploaded_files(uploaded_files):
     groups_database = []
     embeddings_database = []
 
