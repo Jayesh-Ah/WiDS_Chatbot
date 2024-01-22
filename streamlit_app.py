@@ -1,5 +1,5 @@
 import streamlit as st
-import spacy as sp
+#import spacy as sp
 import fitz
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
