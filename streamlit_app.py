@@ -1,5 +1,5 @@
 import streamlit as st
-from chatbot.py import req_file
+from chatbot import req_file
 
 st.header('''VartaVault Maestro''')
 st.sidebar.header("PDF Chatbot")
