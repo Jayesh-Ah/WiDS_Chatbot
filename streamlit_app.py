@@ -5,15 +5,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 nlp = spacy.load("en_core_web_md")
 
-#EXTRACTING TEXT
-def extract(doc):
-  file = fitz.open(doc)
-  words = ""
-  for page_num in range(file.page_count):
-    page = doc[page_num]
-    words += page.get_text()
-  doc.close()
-  return words
+def main():
 
 #STREAMLIT APP
 st.header('''VartaVault Maestro''')
@@ -24,4 +16,17 @@ Elevate your document experience with this sleek PDF Chatbot, powered by Python,
 pdf = st.sidebar.file_uploader("Upload or drag PDF here", type = "pdf", accept_multiple_files=True)
 st.sidebar.button("Upload")
 
+#EXTRACTING TEXT
+def extract(doc):
+  file = fitz.open(doc)
+  words = ""
+  for page_num in range(file.page_count):
+    page = doc[page_num]
+    words += page.get_text()
+  doc.close()
+  return words
+  
+
+if __name__ == '__main__':
+  main()
   
