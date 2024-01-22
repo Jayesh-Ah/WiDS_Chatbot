@@ -1,5 +1,5 @@
 import streamlit as st
-from chatbot import req_file
+from chatbot import process_uploaded_files
 
 st.header('''VartaVault Maestro''')
 st.sidebar.header("PDF Chatbot")
@@ -11,6 +11,6 @@ st.sidebar.button("Upload")
 
 if st.button("Process"):
   if pdf:
-    result = req_file(pdf)
+    result = process_uploaded_files(pdf)
     st.write('### Results:')
     st.write(result)
