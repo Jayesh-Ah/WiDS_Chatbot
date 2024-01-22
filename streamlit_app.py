@@ -1,9 +1,9 @@
 import streamlit as st
-import spacy as sp
+import spacy 
 import fitz
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-nlp = sp.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 
 def main():
 
