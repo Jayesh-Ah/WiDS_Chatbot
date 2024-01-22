@@ -3,7 +3,7 @@ import spacy as sp
 import fitz
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-nlp = sp.load("en_core_web_md")
+nlp = sp.load("en_core_web_sm")
 
 def main():
 
