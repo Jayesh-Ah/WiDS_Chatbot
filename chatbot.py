@@ -1,4 +1,5 @@
 import numpy as np
+import scikit-learn as sklearn
 #import fitz
 #from spacy.lang.en import English
 import spacy
