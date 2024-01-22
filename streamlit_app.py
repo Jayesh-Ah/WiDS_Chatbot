@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.header('''## VartaVault Maestro''')
+st.header('''VartaVault Maestro''')
 
 st.sidebar.header("PDF Chatbot")
 st.sidebar.markdown('''
