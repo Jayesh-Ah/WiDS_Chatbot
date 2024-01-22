@@ -1,6 +1,8 @@
 import streamlit as st
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from PyPDF2 import PdfReader
+import spacy as sp
+import fitz
+import numpy as np
+from sklearn.metrics.pairwise import cosine_similarity
 
 st.header('''VartaVault Maestro''')
 
