@@ -1,7 +1,7 @@
 import streamlit as st
-from spacy.lang.en import English
 import fitz
 import numpy as np
+from spacy.lang.en import English
 from sklearn.metrics.pairwise import cosine_similarity
 nlp = spacy.load("en_core_web_sm")
 
