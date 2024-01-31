@@ -6,8 +6,11 @@ The PDF chatbot allows users to upload PDF files, extract text, and convert it i
 
 # Resources Used
 Python: Programming language used for development.
+
 Spacy: NLP library utilized for text processing and embedding generation.
+
 NumPy: Library for numerical computing, used for handling arrays and databases.
+
 Streamlit: Framework for building interactive web applications, used for user interface development.
 
 # Learning Experience
