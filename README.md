@@ -1,4 +1,4 @@
-# PDF Chatbot using Python, Spacy, NumPy, and Streamlit
+## PDF Chatbot using Python, Spacy, NumPy, and Streamlit
 This project aims to develop a PDF chatbot application using Python along with libraries like Spacy, NumPy, and Streamlit. Throughout the project, I learned about natural language processing (NLP) techniques and utilized the Langchain embedding model for text processing.
 
 # Project Overview
